@@ -37,15 +37,25 @@ Each assignment will have a few of the following categories of exercises:
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested:
+    - Aspect Tested: Accurate, Stable
+    - MID It was ok, not the most stable. 
+    - After changes: HIGH. More stable, better structured.
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: Clear, Gets key points
+    - MID It was ok, didn't really extract key points, more like it  shortened it.
+    - After changes: MID/HIGH. Mildly better in the summary.
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested: Easy story arc, changes every time you retry
+    - LOW This was too stable
+    - After changes: HIGH, got more imaginative in characters as well as settings.
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+    - Aspect Tested: Clear steps, accurate
+    - LOW Too verbose without the added benefit of clear steps.
+    - After changes: MID Still too verbose but more clear.
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested: Boring and stable.
+    - LOW it convoluted it more I thought.
+    - After changes: LOW. 
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -64,3 +74,4 @@ In essence, it's a first look to ensure your system isn't experiencing catastrop
 ##### 🧑‍🤝‍🧑❓ Discussion Question #1:
 
 What are some limitations of vibe checking as an evaluation tool?
+Its sort of ad hoc. I am sure the paragraphs I chose to test it with effected the tweaks that I chose. Overfitting and missing some performance valleys would be the main risks. A better vibe check would be more programmatic and comprehensive. But it was something which is better than nothing :)
