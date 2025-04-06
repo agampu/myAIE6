@@ -12,6 +12,12 @@ def cosine_similarity(vector_a: np.array, vector_b: np.array) -> float:
     norm_b = np.linalg.norm(vector_b)
     return dot_product / (norm_a * norm_b)
 
+def negative_euclidean_distance(vector_a: np.array, vector_b: np.array) -> float:
+    """Computes the *negative* Euclidean distance between two vectors."""
+    vector_a = vector_a / np.linalg.norm(vector_a) #normalizing
+    vector_b = vector_b / np.linalg.norm(vector_b)
+    return -np.linalg.norm(vector_a - vector_b)
+
 
 class VectorDatabase:
     def __init__(self, embedding_model: EmbeddingModel = None):
@@ -25,7 +31,7 @@ class VectorDatabase:
         self,
         query_vector: np.array,
         k: int,
-        distance_measure: Callable = cosine_similarity,
+        distance_measure: Callable = negative_euclidean_distance,
     ) -> List[Tuple[str, float]]:
         scores = [
             (key, distance_measure(query_vector, vector))
@@ -37,7 +43,7 @@ class VectorDatabase:
         self,
         query_text: str,
         k: int,
-        distance_measure: Callable = cosine_similarity,
+        distance_measure: Callable = negative_euclidean_distance,
         return_as_text: bool = False,
     ) -> List[Tuple[str, float]]:
         query_vector = self.embedding_model.get_embedding(query_text)
