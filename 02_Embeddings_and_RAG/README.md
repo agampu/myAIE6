@@ -46,12 +46,14 @@ Run the notebook!
 
 - Run the notebook
      - The notebook ran successfully. The new distance metric, upon further examination and experimentation is not better, honestly. But I tried it! I also tried to add metadata but I need a lot of help to do that, so I will continue those efforts in parallel.
-     - My answers to notebook questions are in the notebook, right where the questions are.
+     - My answers to notebook questions are in the notebook, right where the questions are. They are also at the very top, all together to make grading easier.
 
 - Record a Loom walking through the notebook, the questions in the notebook, and your addition!
 
 # Share 🚀
 - Show your App in a loom video and explain the diagram
+     - https://tinyurl.com/Assignment2AIE6Geeta (Loom Video)
+     - https://excalidraw.com/#json=qeQ6IJ37GKhZlOp1WJaV3,FP04-OF4tqZ2mvxSoUNUpA (Diagram)
 - Make a social media post about your final application and tag @AIMakerspace
 - Share 3 lessons learned
 - Share 3 lessons not learned
