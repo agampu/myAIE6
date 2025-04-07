@@ -36,10 +36,18 @@ Run the notebook!
 
 - Add one of the following "extras" to the RAG pipeline:
      - Allow it to work with PDF files
+          - I did not try this. I looked into it a bit.
      - Implement a new distance metric
+          - I implemented the negative euclidean distance metric.
      - Add metadata support to the vector database
+          - I tried this. But I could not succeed in getting the code to run correctly. Ongoing experimentation!
 - Make a simple diagram of the RAG process
+     - Here is my diagram: Diagram: https://excalidraw.com/#json=qeQ6IJ37GKhZlOp1WJaV3,FP04-OF4tqZ2mvxSoUNUpA
+
 - Run the notebook
+     - The notebook ran successfully. The new distance metric, upon further examination and experimentation is not better, honestly. But I tried it! I also tried to add metadata but I need a lot of help to do that, so I will continue those efforts in parallel.
+     - My answers to notebook questions are in the notebook, right where the questions are.
+
 - Record a Loom walking through the notebook, the questions in the notebook, and your addition!
 
 # Share 🚀
