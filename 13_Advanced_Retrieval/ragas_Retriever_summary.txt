@@ -1,0 +1,22 @@
+Retriever: Naive Retriever
+Scores: {'faithfulness': 0.9647, 'context_recall': 1.0000, 'context_precision': 0.8856}
+-------------------------------------------------
+Retriever: BM25 Retriever
+Scores: {'faithfulness': 0.9599, 'context_recall': 0.9889, 'context_precision': 0.7824}
+-------------------------------------------------
+Retriever: Multi-Query Retriever
+Scores: {'faithfulness': 0.9948, 'context_recall': 1.0000, 'context_precision': 0.7148}
+-------------------------------------------------
+Retriever: Parent Document Retriever
+Scores: {'faithfulness': 0.8673, 'context_recall': 0.9792, 'context_precision': 0.9838}
+-------------------------------------------------
+Retriever: Semantic Retriever
+Scores: {'faithfulness': 0.9924, 'context_recall': 1.0000, 'context_precision': 0.85
+08}
+-------------------------------------------------
+Retriever: Contextual Compression Retriever
+Scores: {'faithfulness': 0.9799, 'context_recall': 1.0000, 'context_precision': 0.9861}
+--------------------------------------------------------------------------------------------------
+Retriever: Ensemble Retriever
+Scores: {'faithfulness': 0.9798, 'context_recall': 1.0000, 'context_precision': 0.8678}
+-------------------------------------------------
