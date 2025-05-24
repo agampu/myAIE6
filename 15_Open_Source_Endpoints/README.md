@@ -12,6 +12,37 @@ I followed the steps Chris showed in class and was able to create endpoints for 
 
 Follow the notebook to create a LangChain pipeline powered by Hugging Face endpoints! This was just plugging in my endpoints and running the notebook - it ran successfully.
 
+# Paul Graham Essay Bot
+## Overview
+This is a **Chainlit-powered RAG (Retrieval Augmented Generation) application** that lets users chat with Paul Graham's essays. The bot can answer questions by retrieving relevant content from Paul Graham's writings and generating responses using Hugging Face language models.
+
+## How It Works
+
+### 🔧 **Setup & Configuration**
+- Uses environment variables for Hugging Face endpoints and authentication
+- Loads configuration from a `.env` file in the parent directory (or HF Secrets)
+- Requires `HF_LLM_ENDPOINT`, `HF_EMBED_ENDPOINT`, and `HF_TOKEN`
+
+### 📚 **Document Processing**
+- Loads Paul Graham essays from `./data/paul_graham_essays.txt`
+- Splits the text into chunks (1000 characters with 30 character overlap)
+- Creates embeddings using my Hugging Face embedding endpoint
+- Builds a FAISS vector database for fast similarity search
+
+### 🔍 **RAG Pipeline**
+1. **User Query**: User asks a question about Paul Graham's essays
+2. **Retrieval**: System finds relevant essay chunks using vector similarity
+3. **Context**: Retrieved chunks are added as context to the prompt
+4. **Generation**: Your Hugging Face LLM generates a response based on the context
+5. **Response**: Bot streams the answer back to the user
+
+### ⚙️ **Technical Stack**
+- **Frontend**: Chainlit web interface
+- **Vector Store**: FAISS for document retrieval
+- **Embeddings**: Custom Hugging Face endpoint
+- **LLM**: Custom Hugging Face endpoint
+- **Framework**: LangChain for RAG orchestration
+
 Once you're done - please move on to Build Task 3!
 
 ### Build Task 3: Create a Chainlit Application - DONE
